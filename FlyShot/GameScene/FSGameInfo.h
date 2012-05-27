@@ -7,3 +7,4 @@
 //
 
 #define finishedGameTime    10
+#define flyNumber           20

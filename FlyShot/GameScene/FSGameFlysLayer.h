@@ -12,5 +12,6 @@
 @interface FSGameFlysLayer : CCLayer {
     
 }
+- (void)makeFly;
 
 @end

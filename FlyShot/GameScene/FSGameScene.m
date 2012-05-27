@@ -36,7 +36,11 @@ static FSGameManager *manager = nil;
     [gameScene addChild:buttonsLayer z:FSGameLayerZButtons];
     
     manager.onMakeFly =^(){
+<<<<<<< HEAD
         [flysLayer ]
+=======
+        [flysLayer makeFly];
+>>>>>>> Modified makeFly .
     };
     
     buttonsLayer.onPushedStartButton = ^(){

@@ -8,11 +8,17 @@
 
 #import "FSGameFlysLayer.h"
 #import "FSGameFly.h"
+#import "FSGameInfo.h"
 
 @implementation FSGameFlysLayer
 
+<<<<<<< HEAD
 int flyNumber = 20;
 CCSpriteBatchNode *flybatch = nil;
+=======
+static int nextFlyNumber;
+static CCSpriteBatchNode *flybatch = nil;
+>>>>>>> Modified makeFly .
 
 - (id)init
 {
@@ -29,7 +35,15 @@ CCSpriteBatchNode *flybatch = nil;
 
 - (void)makeFly
 {
+<<<<<<< HEAD
     flybatch 
+=======
+    CCArray *flys = [flybatch children];
+    FSGameFly *fly = [flys objectAtIndex:nextFlyNumber];
+    if(!fly.isValid) [fly resetFly];
+    nextFlyNumber++;
+    if(nextFlyNumber >= [flys count]) nextFlyNumber = 0;
+>>>>>>> Modified makeFly .
 }
 
 @end
