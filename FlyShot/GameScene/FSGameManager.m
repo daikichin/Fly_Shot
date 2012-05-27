@@ -12,7 +12,7 @@
 @implementation FSGameManager
 
 @synthesize gameTime;
-@synthesize onFinishedGame;
+@synthesize onFinishGame, onMakeFly;
 
 static FSGameManager *manager = nil;
 
@@ -40,10 +40,17 @@ static FSGameManager *manager = nil;
 - (void)timer :(ccTime)dt
 {
     if (gameTime > finishedGameTime) {
-        if (self.onFinishedGame) {
-            self.onFinishedGame();
+        if (self.onFinishGame) {
+            self.onFinishGame();
         }
     }
+    
+    if(gameTime > 5){
+        if (self.onMakeFly) {
+            self.onMakeFly();
+        }
+    }
+    NSLog(@"%f", gameTime);
     gameTime += dt;
 }
 

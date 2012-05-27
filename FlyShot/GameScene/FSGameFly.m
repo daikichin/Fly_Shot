@@ -10,12 +10,23 @@
 
 @implementation FSGameFly
 
+@synthesize isValid;
+
 - (id)init
 {
     if (self = [super initWithFile:@"fly.png"]) {
-        self.position = ccp(100, 100);
+        srand(time(NULL));
+        [self resetFly];
     }
     return self;
+}
+
+- (void)resetFly
+{
+    CGSize winSize = [CCDirector sharedDirector].winSize;
+    self.isValid = NO;
+//    self.visible = NO;
+    self.position = ccp(rand()%((int)winSize.width),rand()%2*winSize.height);
 }
 
 @end

@@ -12,18 +12,24 @@
 @implementation FSGameFlysLayer
 
 int flyNumber = 20;
+CCSpriteBatchNode *flybatch = nil;
 
 - (id)init
 {
     if (self = [super init]) {
-        CCSpriteBatchNode *flybatch = [CCSpriteBatchNode batchNodeWithFile:@"fly.png"];
+        flybatch = [CCSpriteBatchNode batchNodeWithFile:@"fly.png"];
         [self addChild:flybatch];
-        for (int i; i < flyNumber; i++) {
+        for (int i; i<flyNumber; i++) {
             FSGameFly *fly = [FSGameFly node];
             [flybatch addChild:fly];
         }
     }
     return self;
+}
+
+- (void)makeFly
+{
+    flybatch 
 }
 
 @end

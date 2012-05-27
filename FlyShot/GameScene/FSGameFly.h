@@ -12,5 +12,7 @@
 @interface FSGameFly : CCSprite {
     
 }
+@property (assign) BOOL isValid;
 
+- (void)resetFly;
 @end

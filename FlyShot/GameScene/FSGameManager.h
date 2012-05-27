@@ -12,7 +12,8 @@
 typedef void (^GameTimerBlock)();
 
 @interface FSGameManager : CCNode {
-    GameTimerBlock onFinishedGame;
+    GameTimerBlock onFinishGame;
+    GameTimerBlock onMakeFly;
 }
 
 + (FSGameManager *)sharedManager;
@@ -20,6 +21,7 @@ typedef void (^GameTimerBlock)();
 - (void)stopTimer;
 
 @property (assign) float gameTime;
-@property (nonatomic, copy) GameTimerBlock onFinishedGame;
+@property (nonatomic, copy) GameTimerBlock onFinishGame;
+@property (nonatomic, copy) GameTimerBlock onMakeFly;
 
 @end

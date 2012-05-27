@@ -35,6 +35,10 @@ static FSGameManager *manager = nil;
     FSGameButtonsLayer *buttonsLayer = [FSGameButtonsLayer node];
     [gameScene addChild:buttonsLayer z:FSGameLayerZButtons];
     
+    manager.onMakeFly =^(){
+        [flysLayer ]
+    };
+    
     buttonsLayer.onPushedStartButton = ^(){
         [manager startTimer];
     };
