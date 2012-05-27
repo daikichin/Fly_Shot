@@ -1,4 +1,3 @@
-/*.xcodeproj/project.xcworkspace/*
-/*.xcodeproj/xcuserdata/*
-*.swp
+FlyShot.xcodeproj/project.xcworkspace/*
+FlyShot.xcodeproj/xcuserdata
 .DS_Store
