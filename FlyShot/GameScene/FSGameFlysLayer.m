@@ -1,5 +1,5 @@
 //
-//  FSGameFlyLayer.m
+//  FSGameFlysLayer.m
 //  FlyShot
 //
 //  Created by Daiki on 12/05/27.
@@ -17,8 +17,9 @@ int flyNumber = 20;
 {
     if (self = [super init]) {
         CCSpriteBatchNode *flybatch = [CCSpriteBatchNode batchNodeWithFile:@"fly.png"];
+        [self addChild:flybatch];
         for (int i; i < flyNumber; i++) {
-            FSGameFly *fly = [FSGameFly fly];
+            FSGameFly *fly = [FSGameFly node];
             [flybatch addChild:fly];
         }
     }

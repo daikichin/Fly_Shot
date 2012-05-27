@@ -1,5 +1,5 @@
 //
-//  FSGameFlyLayer.h
+//  FSGameFlysLayer.h
 //  FlyShot
 //
 //  Created by Daiki on 12/05/27.

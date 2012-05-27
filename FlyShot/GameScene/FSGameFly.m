@@ -8,13 +8,14 @@
 
 #import "FSGameFly.h"
 
-
 @implementation FSGameFly
 
-+(FSGameFly *)fly
+- (id)init
 {
-    FSGameFly *fly = [self spriteWithFile:@"fly.png"];
-    return fly;
+    if (self = [super initWithFile:@"fly.png"]) {
+        self.position = ccp(100, 100);
+    }
+    return self;
 }
 
 @end

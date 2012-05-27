@@ -12,6 +12,5 @@
 @interface FSGameFly : CCSprite {
     
 }
-+ (FSGameFly *)fly;
 
 @end
