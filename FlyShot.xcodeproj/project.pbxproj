@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A65BCE6D157225D800D2E58C /* fly.png in Resources */ = {isa = PBXBuildFile; fileRef = A65BCE6B157225D800D2E58C /* fly.png */; };
+		A65BCE6E157225D800D2E58C /* fly@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A65BCE6C157225D800D2E58C /* fly@2x.png */; };
+		A65BCE75157228E200D2E58C /* FSGameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A65BCE74157228E200D2E58C /* FSGameManager.m */; };
+		A65BCE7B1572314A00D2E58C /* FSGameButtonsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A65BCE7A1572314A00D2E58C /* FSGameButtonsLayer.m */; };
 		A6BECB7A157200AB003B2612 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6BECB79157200AB003B2612 /* QuartzCore.framework */; };
 		A6BECB7C157200AB003B2612 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6BECB7B157200AB003B2612 /* OpenGLES.framework */; };
 		A6BECB7E157200AB003B2612 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6BECB7D157200AB003B2612 /* OpenAL.framework */; };
@@ -139,7 +143,6 @@
 		A6BECD0A15720357003B2612 /* FSGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BECD0915720357003B2612 /* FSGameScene.m */; };
 		A6BECD0D157203EC003B2612 /* FSGameBackgroundLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BECD0C157203EC003B2612 /* FSGameBackgroundLayer.m */; };
 		A6BECD14157204F1003B2612 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = A6BECD0F157204F1003B2612 /* background.png */; };
-		A6BECD15157204F1003B2612 /* fly.png in Resources */ = {isa = PBXBuildFile; fileRef = A6BECD10157204F1003B2612 /* fly.png */; };
 		A6BECD16157204F1003B2612 /* game_over.png in Resources */ = {isa = PBXBuildFile; fileRef = A6BECD11157204F1003B2612 /* game_over.png */; };
 		A6BECD17157204F1003B2612 /* number_texture.png in Resources */ = {isa = PBXBuildFile; fileRef = A6BECD12157204F1003B2612 /* number_texture.png */; };
 		A6BECD18157204F1003B2612 /* particle_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = A6BECD13157204F1003B2612 /* particle_blue.png */; };
@@ -148,6 +151,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A65BCE6B157225D800D2E58C /* fly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fly.png; path = ../../../../fly_iOS/fly_iOS/Resources/flyResources/fly.png; sourceTree = "<group>"; };
+		A65BCE6C157225D800D2E58C /* fly@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fly@2x.png"; path = "../../../../fly_iOS/fly_iOS/Resources/flyResources/fly@2x.png"; sourceTree = "<group>"; };
+		A65BCE73157228E200D2E58C /* FSGameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSGameManager.h; sourceTree = "<group>"; };
+		A65BCE74157228E200D2E58C /* FSGameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSGameManager.m; sourceTree = "<group>"; };
+		A65BCE7615722EBB00D2E58C /* FSGameInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSGameInfo.h; sourceTree = "<group>"; };
+		A65BCE791572314A00D2E58C /* FSGameButtonsLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSGameButtonsLayer.h; sourceTree = "<group>"; };
+		A65BCE7A1572314A00D2E58C /* FSGameButtonsLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSGameButtonsLayer.m; sourceTree = "<group>"; };
 		A6BECB75157200AB003B2612 /* FlyShot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlyShot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6BECB79157200AB003B2612 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A6BECB7B157200AB003B2612 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -398,13 +408,12 @@
 		A6BECD0B157203EC003B2612 /* FSGameBackgroundLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSGameBackgroundLayer.h; sourceTree = "<group>"; };
 		A6BECD0C157203EC003B2612 /* FSGameBackgroundLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSGameBackgroundLayer.m; sourceTree = "<group>"; };
 		A6BECD0F157204F1003B2612 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
-		A6BECD10157204F1003B2612 /* fly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fly.png; sourceTree = "<group>"; };
 		A6BECD11157204F1003B2612 /* game_over.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = game_over.png; sourceTree = "<group>"; };
 		A6BECD12157204F1003B2612 /* number_texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number_texture.png; sourceTree = "<group>"; };
 		A6BECD13157204F1003B2612 /* particle_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particle_blue.png; sourceTree = "<group>"; };
 		A6BECD2315720DB1003B2612 /* FSGameFly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSGameFly.h; sourceTree = "<group>"; };
 		A6BECD2415720DB1003B2612 /* FSGameFly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSGameFly.m; sourceTree = "<group>"; };
-		A6BECD2615720E6D003B2612 /* FSGameFlysLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; path = FSGameFlysLayer.h; sourceTree = "<group>"; };
+		A6BECD2615720E6D003B2612 /* FSGameFlysLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSGameFlysLayer.h; sourceTree = "<group>"; };
 		A6BECD2715720E6D003B2612 /* FSGameFlysLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSGameFlysLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -836,6 +845,9 @@
 		A6BECD0715720348003B2612 /* GameScene */ = {
 			isa = PBXGroup;
 			children = (
+				A65BCE7615722EBB00D2E58C /* FSGameInfo.h */,
+				A65BCE73157228E200D2E58C /* FSGameManager.h */,
+				A65BCE74157228E200D2E58C /* FSGameManager.m */,
 				A6BECD0815720357003B2612 /* FSGameScene.h */,
 				A6BECD0915720357003B2612 /* FSGameScene.m */,
 				A6BECD0B157203EC003B2612 /* FSGameBackgroundLayer.h */,
@@ -844,6 +856,8 @@
 				A6BECD2415720DB1003B2612 /* FSGameFly.m */,
 				A6BECD2615720E6D003B2612 /* FSGameFlysLayer.h */,
 				A6BECD2715720E6D003B2612 /* FSGameFlysLayer.m */,
+				A65BCE791572314A00D2E58C /* FSGameButtonsLayer.h */,
+				A65BCE7A1572314A00D2E58C /* FSGameButtonsLayer.m */,
 			);
 			path = GameScene;
 			sourceTree = "<group>";
@@ -851,8 +865,9 @@
 		A6BECD0E157204C3003B2612 /* GameScene */ = {
 			isa = PBXGroup;
 			children = (
+				A65BCE6B157225D800D2E58C /* fly.png */,
+				A65BCE6C157225D800D2E58C /* fly@2x.png */,
 				A6BECD0F157204F1003B2612 /* background.png */,
-				A6BECD10157204F1003B2612 /* fly.png */,
 				A6BECD11157204F1003B2612 /* game_over.png */,
 				A6BECD12157204F1003B2612 /* number_texture.png */,
 				A6BECD13157204F1003B2612 /* particle_blue.png */,
@@ -937,10 +952,11 @@
 				A6BECBBC157200AC003B2612 /* PositionTextureColorAlphaTest.fsh in Resources */,
 				A6BECCDC157200AE003B2612 /* ChangeLog in Resources */,
 				A6BECD14157204F1003B2612 /* background.png in Resources */,
-				A6BECD15157204F1003B2612 /* fly.png in Resources */,
 				A6BECD16157204F1003B2612 /* game_over.png in Resources */,
 				A6BECD17157204F1003B2612 /* number_texture.png in Resources */,
 				A6BECD18157204F1003B2612 /* particle_blue.png in Resources */,
+				A65BCE6D157225D800D2E58C /* fly.png in Resources */,
+				A65BCE6E157225D800D2E58C /* fly@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1051,6 +1067,8 @@
 				A6BECD0D157203EC003B2612 /* FSGameBackgroundLayer.m in Sources */,
 				A6BECD2515720DB1003B2612 /* FSGameFly.m in Sources */,
 				A6BECD2815720E6D003B2612 /* FSGameFlysLayer.m in Sources */,
+				A65BCE75157228E200D2E58C /* FSGameManager.m in Sources */,
+				A65BCE7B1572314A00D2E58C /* FSGameButtonsLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1109,6 +1127,7 @@
 				INFOPLIST_FILE = FlyShot/Resources/Info.plist;
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1124,6 +1143,7 @@
 				INFOPLIST_FILE = FlyShot/Resources/Info.plist;
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1148,6 +1168,7 @@
 				A6BECD06157200AE003B2612 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
